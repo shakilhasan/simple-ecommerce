@@ -9,8 +9,6 @@ const {
   countHandler: baseCountHandler,
   deleteHandler,
 } = require("../../core/controller");
-const { validate } = require("./request");
-const { handleValidation } = require("../../common/middlewares");
 
 const router = express.Router();
 

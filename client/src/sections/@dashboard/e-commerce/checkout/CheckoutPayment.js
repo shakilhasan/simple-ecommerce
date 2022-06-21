@@ -18,6 +18,7 @@ import CheckoutBillingInfo from './CheckoutBillingInfo';
 import CheckoutPaymentMethods from './CheckoutPaymentMethods';
 import {addSalesOrder} from "../../../../helpers/backend_helper";
 
+
 // ----------------------------------------------------------------------
 
 const DELIVERY_OPTIONS = [
@@ -68,7 +69,7 @@ export default function CheckoutPayment() {
 
   const { checkout } = useSelector((state) => state.product);
 
-  const { total, discount, subtotal, shipping } = checkout;
+  const {cart:products, billing:customer_address, total, discount, subtotal, shipping } = checkout;
 
   const handleNextStep = () => {
     dispatch(onNextStep());
@@ -107,7 +108,7 @@ export default function CheckoutPayment() {
 
   const onSubmit = async () => {
     try {
-      const finalData = { total, discount, subtotal, shipping };
+      const finalData = { total, discount, subtotal, shipping , customer_address, products};
       finalData.sales_order_number = `SO-${Math.floor(Math.random() * 1000000)}`;
       // finalData.sales_order_date = new Date();
       finalData.sales_order_date = "2022-06-20T16:42:41.369+00:00";
