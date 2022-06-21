@@ -7,7 +7,8 @@
   "description": "A functional ecommerce web application that is developed by using React, Redux, Node.js, Express, MongoDB",
   "main": "index.js",
   "scripts": {
-    "start": "sudo docker-compose up",
+    "start": "sudo docker-compose start docker-compose.mongocloud",
+    "start-local": "sudo docker-compose up",
     "build": "docker-compose build"
   },
   "repository": {

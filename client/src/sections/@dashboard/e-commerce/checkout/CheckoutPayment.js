@@ -109,9 +109,12 @@ export default function CheckoutPayment() {
     try {
       const finalData = { total, discount, subtotal, shipping };
       finalData.sales_order_number = `SO-${Math.floor(Math.random() * 1000000)}`;
-      finalData.sales_order_date = new Date();
+      // finalData.sales_order_date = new Date();
+      finalData.sales_order_date = "2022-06-20T16:42:41.369+00:00";
       console.log("finalData...", finalData);
-      // await addSalesOrder(finalData);
+      const res= await addSalesOrder(finalData);
+      console.log("addSalesOrder  res...", res);
+
       // handleNextStep();
     } catch (error) {
       console.error(error);

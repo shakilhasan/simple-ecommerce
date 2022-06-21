@@ -1,0 +1,1673 @@
+{
+	"info": {
+		"_postman_id": "3e303642-db16-4194-8f5e-0f41c88034ae",
+		"name": "ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "mock",
+			"item": [
+				{
+					"name": "/products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/mock/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mock",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "heroku/products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://sabil-api.herokuapp.com/mock/products",
+							"protocol": "https",
+							"host": [
+								"sabil-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"mock",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/blogs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/mock/blogs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mock",
+								"blogs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "heroku/blogs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sabil-api.herokuapp.com/mock/blogs",
+							"protocol": "https",
+							"host": [
+								"sabil-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"mock",
+								"blogs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/mock/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mock",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "minimal-assets-api.vercel.app",
+			"item": [
+				{
+					"name": "/api/account/login",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\":\"demo@minimals.cc\",\"password\":\"demo1234\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://minimal-assets-api.vercel.app/api/account/login",
+							"protocol": "https",
+							"host": [
+								"minimal-assets-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"account",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "https://minimal-assets-api.vercel.app/api/account/login",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"email\":\"demo@minimals.cc\",\"password\":\"demo1234\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://minimal-assets-api.vercel.app/api/account/login",
+									"protocol": "https",
+									"host": [
+										"minimal-assets-api",
+										"vercel",
+										"app"
+									],
+									"path": [
+										"api",
+										"account",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-matched-path",
+									"value": "/api/account/login"
+								},
+								{
+									"key": "cache-control",
+									"value": "public, max-age=0, must-revalidate"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 08 Apr 2022 14:00:21 GMT"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "715"
+								},
+								{
+									"key": "etag",
+									"value": "\"2cb-x1UAVrsvjapMJWSjNxs+Kplzp/o\""
+								},
+								{
+									"key": "x-vercel-cache",
+									"value": "MISS"
+								},
+								{
+									"key": "age",
+									"value": "0"
+								},
+								{
+									"key": "server",
+									"value": "Vercel"
+								},
+								{
+									"key": "x-vercel-id",
+									"value": "sin1::iad1::xsqfg-1649426421564-025b747ef817"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=63072000; includeSubDomains; preload"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4ODY0YzcxNy01ODdkLTQ3MmEtOTI5YS04ZTVmMjk4MDI0ZGEtMCIsImlhdCI6MTY0OTQyNjQyMSwiZXhwIjoxNjQ5ODU4NDIxfQ.QDbu4Olw_OJk8ib_HZyA6eFXWqhbfOQkTDB4cmtyVnA\",\n    \"user\": {\n        \"id\": \"8864c717-587d-472a-929a-8e5f298024da-0\",\n        \"displayName\": \"Jaydon Frankie\",\n        \"email\": \"demo@minimals.cc\",\n        \"password\": \"demo1234\",\n        \"photoURL\": \"https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_default.jpg\",\n        \"phoneNumber\": \"+40 777666555\",\n        \"country\": \"United States\",\n        \"address\": \"90210 Broadway Blvd\",\n        \"state\": \"California\",\n        \"city\": \"San Francisco\",\n        \"zipCode\": \"94116\",\n        \"about\": \"Praesent turpis. Phasellus viverra nulla ut metus varius laoreet. Phasellus tempus.\",\n        \"role\": \"admin\",\n        \"isPublic\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/account/my-account",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4ODY0YzcxNy01ODdkLTQ3MmEtOTI5YS04ZTVmMjk4MDI0ZGEtMCIsImlhdCI6MTY0OTY1NjQ5NiwiZXhwIjoxNjQ5OTE1Njk2fQ.l8z8Os-Qm7flg0cawceSmbav5jOBRWPsPhZzWk2f3-Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://minimal-assets-api.vercel.app/api/account/my-account",
+							"protocol": "https",
+							"host": [
+								"minimal-assets-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"account",
+								"my-account"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/api/account/my-account",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4ODY0YzcxNy01ODdkLTQ3MmEtOTI5YS04ZTVmMjk4MDI0ZGEtMCIsImlhdCI6MTY0OTY1NjQ5NiwiZXhwIjoxNjQ5OTE1Njk2fQ.l8z8Os-Qm7flg0cawceSmbav5jOBRWPsPhZzWk2f3-Q",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://minimal-assets-api.vercel.app/api/account/my-account",
+									"protocol": "https",
+									"host": [
+										"minimal-assets-api",
+										"vercel",
+										"app"
+									],
+									"path": [
+										"api",
+										"account",
+										"my-account"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-matched-path",
+									"value": "/api/account/my-account"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 11 Apr 2022 05:56:14 GMT"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "507"
+								},
+								{
+									"key": "etag",
+									"value": "\"1fb-sc77shTI+pQ+UXFo4AtT+CToyUE\""
+								},
+								{
+									"key": "x-vercel-cache",
+									"value": "BYPASS"
+								},
+								{
+									"key": "server",
+									"value": "Vercel"
+								},
+								{
+									"key": "x-vercel-id",
+									"value": "sin1::iad1::sgthr-1649656574338-fba55620c5b1"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=63072000; includeSubDomains; preload"
+								},
+								{
+									"key": "cache-control",
+									"value": "public, max-age=0, must-revalidate"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"id\": \"8864c717-587d-472a-929a-8e5f298024da-0\",\n        \"displayName\": \"Jaydon Frankie\",\n        \"email\": \"demo@minimals.cc\",\n        \"password\": \"demo1234\",\n        \"photoURL\": \"https://minimal-assets-api-dev.vercel.app/assets/images/avatars/avatar_default.jpg\",\n        \"phoneNumber\": \"+40 777666555\",\n        \"country\": \"United States\",\n        \"address\": \"90210 Broadway Blvd\",\n        \"state\": \"California\",\n        \"city\": \"San Francisco\",\n        \"zipCode\": \"94116\",\n        \"about\": \"Praesent turpis. Phasellus viverra nulla ut metus varius laoreet. Phasellus tempus.\",\n        \"role\": \"admin\",\n        \"isPublic\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\":\"demo@minimals.cc\",\"password\":\"demo1234\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://minimal-assets-api.vercel.app/api/products",
+							"protocol": "https",
+							"host": [
+								"minimal-assets-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "https://minimal-assets-api.vercel.app/api/account/login",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"email\":\"demo@minimals.cc\",\"password\":\"demo1234\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://minimal-assets-api.vercel.app/api/account/login",
+									"protocol": "https",
+									"host": [
+										"minimal-assets-api",
+										"vercel",
+										"app"
+									],
+									"path": [
+										"api",
+										"account",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-matched-path",
+									"value": "/api/account/login"
+								},
+								{
+									"key": "cache-control",
+									"value": "public, max-age=0, must-revalidate"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 08 Apr 2022 14:00:21 GMT"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "715"
+								},
+								{
+									"key": "etag",
+									"value": "\"2cb-x1UAVrsvjapMJWSjNxs+Kplzp/o\""
+								},
+								{
+									"key": "x-vercel-cache",
+									"value": "MISS"
+								},
+								{
+									"key": "age",
+									"value": "0"
+								},
+								{
+									"key": "server",
+									"value": "Vercel"
+								},
+								{
+									"key": "x-vercel-id",
+									"value": "sin1::iad1::xsqfg-1649426421564-025b747ef817"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=63072000; includeSubDomains; preload"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4ODY0YzcxNy01ODdkLTQ3MmEtOTI5YS04ZTVmMjk4MDI0ZGEtMCIsImlhdCI6MTY0OTQyNjQyMSwiZXhwIjoxNjQ5ODU4NDIxfQ.QDbu4Olw_OJk8ib_HZyA6eFXWqhbfOQkTDB4cmtyVnA\",\n    \"user\": {\n        \"id\": \"8864c717-587d-472a-929a-8e5f298024da-0\",\n        \"displayName\": \"Jaydon Frankie\",\n        \"email\": \"demo@minimals.cc\",\n        \"password\": \"demo1234\",\n        \"photoURL\": \"https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_default.jpg\",\n        \"phoneNumber\": \"+40 777666555\",\n        \"country\": \"United States\",\n        \"address\": \"90210 Broadway Blvd\",\n        \"state\": \"California\",\n        \"city\": \"San Francisco\",\n        \"zipCode\": \"94116\",\n        \"about\": \"Praesent turpis. Phasellus viverra nulla ut metus varius laoreet. Phasellus tempus.\",\n        \"role\": \"admin\",\n        \"isPublic\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/blog/posts/all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\":\"demo@minimals.cc\",\"password\":\"demo1234\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://minimal-assets-api.vercel.app/api/blog/posts/all",
+							"protocol": "https",
+							"host": [
+								"minimal-assets-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"blog",
+								"posts",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "https://minimal-assets-api.vercel.app/api/account/login",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"email\":\"demo@minimals.cc\",\"password\":\"demo1234\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://minimal-assets-api.vercel.app/api/account/login",
+									"protocol": "https",
+									"host": [
+										"minimal-assets-api",
+										"vercel",
+										"app"
+									],
+									"path": [
+										"api",
+										"account",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-matched-path",
+									"value": "/api/account/login"
+								},
+								{
+									"key": "cache-control",
+									"value": "public, max-age=0, must-revalidate"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 08 Apr 2022 14:00:21 GMT"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "715"
+								},
+								{
+									"key": "etag",
+									"value": "\"2cb-x1UAVrsvjapMJWSjNxs+Kplzp/o\""
+								},
+								{
+									"key": "x-vercel-cache",
+									"value": "MISS"
+								},
+								{
+									"key": "age",
+									"value": "0"
+								},
+								{
+									"key": "server",
+									"value": "Vercel"
+								},
+								{
+									"key": "x-vercel-id",
+									"value": "sin1::iad1::xsqfg-1649426421564-025b747ef817"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=63072000; includeSubDomains; preload"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4ODY0YzcxNy01ODdkLTQ3MmEtOTI5YS04ZTVmMjk4MDI0ZGEtMCIsImlhdCI6MTY0OTQyNjQyMSwiZXhwIjoxNjQ5ODU4NDIxfQ.QDbu4Olw_OJk8ib_HZyA6eFXWqhbfOQkTDB4cmtyVnA\",\n    \"user\": {\n        \"id\": \"8864c717-587d-472a-929a-8e5f298024da-0\",\n        \"displayName\": \"Jaydon Frankie\",\n        \"email\": \"demo@minimals.cc\",\n        \"password\": \"demo1234\",\n        \"photoURL\": \"https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_default.jpg\",\n        \"phoneNumber\": \"+40 777666555\",\n        \"country\": \"United States\",\n        \"address\": \"90210 Broadway Blvd\",\n        \"state\": \"California\",\n        \"city\": \"San Francisco\",\n        \"zipCode\": \"94116\",\n        \"about\": \"Praesent turpis. Phasellus viverra nulla ut metus varius laoreet. Phasellus tempus.\",\n        \"role\": \"admin\",\n        \"isPublic\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/blog/post",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://minimal-assets-api.vercel.app/api/blog/post?title=how-7-things-will-change-the-way-you-approach-event",
+							"protocol": "https",
+							"host": [
+								"minimal-assets-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"blog",
+								"post"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "how-7-things-will-change-the-way-you-approach-event"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "https://minimal-assets-api.vercel.app/api/account/login",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"email\":\"demo@minimals.cc\",\"password\":\"demo1234\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://minimal-assets-api.vercel.app/api/account/login",
+									"protocol": "https",
+									"host": [
+										"minimal-assets-api",
+										"vercel",
+										"app"
+									],
+									"path": [
+										"api",
+										"account",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-matched-path",
+									"value": "/api/account/login"
+								},
+								{
+									"key": "cache-control",
+									"value": "public, max-age=0, must-revalidate"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 08 Apr 2022 14:00:21 GMT"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "715"
+								},
+								{
+									"key": "etag",
+									"value": "\"2cb-x1UAVrsvjapMJWSjNxs+Kplzp/o\""
+								},
+								{
+									"key": "x-vercel-cache",
+									"value": "MISS"
+								},
+								{
+									"key": "age",
+									"value": "0"
+								},
+								{
+									"key": "server",
+									"value": "Vercel"
+								},
+								{
+									"key": "x-vercel-id",
+									"value": "sin1::iad1::xsqfg-1649426421564-025b747ef817"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=63072000; includeSubDomains; preload"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4ODY0YzcxNy01ODdkLTQ3MmEtOTI5YS04ZTVmMjk4MDI0ZGEtMCIsImlhdCI6MTY0OTQyNjQyMSwiZXhwIjoxNjQ5ODU4NDIxfQ.QDbu4Olw_OJk8ib_HZyA6eFXWqhbfOQkTDB4cmtyVnA\",\n    \"user\": {\n        \"id\": \"8864c717-587d-472a-929a-8e5f298024da-0\",\n        \"displayName\": \"Jaydon Frankie\",\n        \"email\": \"demo@minimals.cc\",\n        \"password\": \"demo1234\",\n        \"photoURL\": \"https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_default.jpg\",\n        \"phoneNumber\": \"+40 777666555\",\n        \"country\": \"United States\",\n        \"address\": \"90210 Broadway Blvd\",\n        \"state\": \"California\",\n        \"city\": \"San Francisco\",\n        \"zipCode\": \"94116\",\n        \"about\": \"Praesent turpis. Phasellus viverra nulla ut metus varius laoreet. Phasellus tempus.\",\n        \"role\": \"admin\",\n        \"isPublic\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/blog/posts/recent",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\":\"demo@minimals.cc\",\"password\":\"demo1234\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://minimal-assets-api.vercel.app/api/blog/posts/recent",
+							"protocol": "https",
+							"host": [
+								"minimal-assets-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"blog",
+								"posts",
+								"recent"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "https://minimal-assets-api.vercel.app/api/account/login",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"email\":\"demo@minimals.cc\",\"password\":\"demo1234\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://minimal-assets-api.vercel.app/api/account/login",
+									"protocol": "https",
+									"host": [
+										"minimal-assets-api",
+										"vercel",
+										"app"
+									],
+									"path": [
+										"api",
+										"account",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-matched-path",
+									"value": "/api/account/login"
+								},
+								{
+									"key": "cache-control",
+									"value": "public, max-age=0, must-revalidate"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 08 Apr 2022 14:00:21 GMT"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "715"
+								},
+								{
+									"key": "etag",
+									"value": "\"2cb-x1UAVrsvjapMJWSjNxs+Kplzp/o\""
+								},
+								{
+									"key": "x-vercel-cache",
+									"value": "MISS"
+								},
+								{
+									"key": "age",
+									"value": "0"
+								},
+								{
+									"key": "server",
+									"value": "Vercel"
+								},
+								{
+									"key": "x-vercel-id",
+									"value": "sin1::iad1::xsqfg-1649426421564-025b747ef817"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=63072000; includeSubDomains; preload"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4ODY0YzcxNy01ODdkLTQ3MmEtOTI5YS04ZTVmMjk4MDI0ZGEtMCIsImlhdCI6MTY0OTQyNjQyMSwiZXhwIjoxNjQ5ODU4NDIxfQ.QDbu4Olw_OJk8ib_HZyA6eFXWqhbfOQkTDB4cmtyVnA\",\n    \"user\": {\n        \"id\": \"8864c717-587d-472a-929a-8e5f298024da-0\",\n        \"displayName\": \"Jaydon Frankie\",\n        \"email\": \"demo@minimals.cc\",\n        \"password\": \"demo1234\",\n        \"photoURL\": \"https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_default.jpg\",\n        \"phoneNumber\": \"+40 777666555\",\n        \"country\": \"United States\",\n        \"address\": \"90210 Broadway Blvd\",\n        \"state\": \"California\",\n        \"city\": \"San Francisco\",\n        \"zipCode\": \"94116\",\n        \"about\": \"Praesent turpis. Phasellus viverra nulla ut metus varius laoreet. Phasellus tempus.\",\n        \"role\": \"admin\",\n        \"isPublic\": true\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accessToken",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"superadmin@ecommerce.com\",\"password\":\"ecommerce1234\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accessToken",
+										"value": "{{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"username\":\"superadmin@sabil.com\",\"password\":\"sabil1234\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "1000"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "998"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Apr 2022 06:11:45 GMT"
+								},
+								{
+									"key": "X-RateLimit-Reset",
+									"value": "1649571760"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "x-correlation-id",
+									"value": "0b9c428d-d300-41b0-91f2-ccc4ffe51512"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5597-owYXjIv+QrlS+8oia2FXsidPaec\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"ok\",\n    \"type\": \"account\",\n    \"currentAuthority\": \"admin\",\n    \"user\": {\n        \"_id\": \"625274a5834c475ab38ede1f\",\n        \"isPublic\": true,\n        \"createdBy\": \"303030303030303030303030\",\n        \"updatedBy\": \"303030303030303030303030\",\n        \"firstName\": \"Super\",\n        \"lastName\": \"Admin\",\n        \"displayName\": \"Super Admin\",\n        \"username\": \"superadmin@sabil.com\",\n        \"address\": \"Dhaka, Bangladesh\",\n        \"phoneNumber\": \"01000000001\",\n        \"email\": \"superadmin@sabil.com\",\n        \"roleId\": \"625274a5834c475ab38ede0c\",\n        \"roleAlias\": \"Super Admin\",\n        \"createdAt\": \"2022-04-10T06:09:41.293Z\",\n        \"updatedAt\": \"2022-04-10T06:09:41.293Z\"\n    },\n    \"permissions\": [\n        {\n            \"_id\": \"625274a5834c475ab38edf35\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/users/delete\",\n            \"resourceAlias\": \"Users delete API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38edda1\",\n            \"createdAt\": \"2022-04-10T06:09:41.442Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.442Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf49\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/users/check\",\n            \"resourceAlias\": \"Users check API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38edda3\",\n            \"createdAt\": \"2022-04-10T06:09:41.454Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.454Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf4b\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/users/detail\",\n            \"resourceAlias\": \"Users detail API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38edd99\",\n            \"createdAt\": \"2022-04-10T06:09:41.455Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.455Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf4d\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/users/update\",\n            \"resourceAlias\": \"Users update API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38edd9d\",\n            \"createdAt\": \"2022-04-10T06:09:41.456Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.456Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf4f\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/users/search\",\n            \"resourceAlias\": \"Users search API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddb1\",\n            \"createdAt\": \"2022-04-10T06:09:41.456Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.456Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf51\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/users/create\",\n            \"resourceAlias\": \"Users create API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38edd9b\",\n            \"createdAt\": \"2022-04-10T06:09:41.457Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.457Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf53\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/products\",\n            \"resourceAlias\": \"Products Products menu API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddd1\",\n            \"createdAt\": \"2022-04-10T06:09:41.458Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.458Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf55\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/users/count\",\n            \"resourceAlias\": \"Users count API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38edd9f\",\n            \"createdAt\": \"2022-04-10T06:09:41.458Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.458Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf57\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/roles/search\",\n            \"resourceAlias\": \"Roles search API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddad\",\n            \"createdAt\": \"2022-04-10T06:09:41.461Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.461Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf59\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/roles/count\",\n            \"resourceAlias\": \"Roles count API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddaf\",\n            \"createdAt\": \"2022-04-10T06:09:41.462Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.462Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf5b\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/roles/delete\",\n            \"resourceAlias\": \"Roles delete API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddb3\",\n            \"createdAt\": \"2022-04-10T06:09:41.462Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.462Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf5d\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/resources/detail\",\n            \"resourceAlias\": \"Resources detail API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddb7\",\n            \"createdAt\": \"2022-04-10T06:09:41.463Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.463Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf5f\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/resources/create\",\n            \"resourceAlias\": \"Resources create API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddb9\",\n            \"createdAt\": \"2022-04-10T06:09:41.464Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.464Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf61\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/resources/update\",\n            \"resourceAlias\": \"Resources update API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddbb\",\n            \"createdAt\": \"2022-04-10T06:09:41.464Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.464Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf63\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/resources/search\",\n            \"resourceAlias\": \"Resources search API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddbd\",\n            \"createdAt\": \"2022-04-10T06:09:41.465Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.465Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf65\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/resources/count\",\n            \"resourceAlias\": \"Resources count API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddbf\",\n            \"createdAt\": \"2022-04-10T06:09:41.466Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.466Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf67\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/resources/delete\",\n            \"resourceAlias\": \"Resources delete API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddc1\",\n            \"createdAt\": \"2022-04-10T06:09:41.470Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.470Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf69\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/permissions/detail\",\n            \"resourceAlias\": \"Permissions detail API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddc5\",\n            \"createdAt\": \"2022-04-10T06:09:41.470Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.470Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf6b\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/permissions/create\",\n            \"resourceAlias\": \"Permissions create API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddc7\",\n            \"createdAt\": \"2022-04-10T06:09:41.471Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.471Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf6d\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/permissions/update\",\n            \"resourceAlias\": \"Permissions update API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddc9\",\n            \"createdAt\": \"2022-04-10T06:09:41.472Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.472Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf6f\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/permissions/search\",\n            \"resourceAlias\": \"Permissions search API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddcb\",\n            \"createdAt\": \"2022-04-10T06:09:41.473Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.473Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf71\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/permissions/count\",\n            \"resourceAlias\": \"Permissions count API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddcd\",\n            \"createdAt\": \"2022-04-10T06:09:41.474Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.474Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf73\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/permissions/delete\",\n            \"resourceAlias\": \"Permissions delete API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddcf\",\n            \"createdAt\": \"2022-04-10T06:09:41.475Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.475Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edfad\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/users\",\n            \"resourceAlias\": \"Users menu\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38edde5\",\n            \"createdAt\": \"2022-04-10T06:09:41.517Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.517Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edfaf\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/users/list\",\n            \"resourceAlias\": \"Users list\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38edde7\",\n            \"createdAt\": \"2022-04-10T06:09:41.518Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.518Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edfb1\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/users/new\",\n            \"resourceAlias\": \"Users new\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38edde9\",\n            \"createdAt\": \"2022-04-10T06:09:41.518Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.518Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edfb9\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/roles\",\n            \"resourceAlias\": \"Roles menu\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddf1\",\n            \"createdAt\": \"2022-04-10T06:09:41.521Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.521Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edfbb\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/roles/list\",\n            \"resourceAlias\": \"Roles list\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddf3\",\n            \"createdAt\": \"2022-04-10T06:09:41.521Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.521Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edfbd\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/roles/new\",\n            \"resourceAlias\": \"Roles new\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddf5\",\n            \"createdAt\": \"2022-04-10T06:09:41.522Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.522Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edfc5\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/resources\",\n            \"resourceAlias\": \"Resources menu\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddeb\",\n            \"createdAt\": \"2022-04-10T06:09:41.527Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.527Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edfc7\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/resources/list\",\n            \"resourceAlias\": \"Resources list\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38edded\",\n            \"createdAt\": \"2022-04-10T06:09:41.528Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.528Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edfc9\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/resources/new\",\n            \"resourceAlias\": \"Resources new\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddef\",\n            \"createdAt\": \"2022-04-10T06:09:41.529Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.529Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edfcb\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/permissions\",\n            \"resourceAlias\": \"Permissions menu\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddf7\",\n            \"createdAt\": \"2022-04-10T06:09:41.529Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.529Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edfcd\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/permissions/list\",\n            \"resourceAlias\": \"Permissions list\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddf9\",\n            \"createdAt\": \"2022-04-10T06:09:41.530Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.530Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edfcf\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/permissions/new\",\n            \"resourceAlias\": \"Permissions new\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddfb\",\n            \"createdAt\": \"2022-04-10T06:09:41.531Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.531Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edfdf\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"user-list-delete-btn\",\n            \"resourceAlias\": \"Delete user button\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddfd\",\n            \"createdAt\": \"2022-04-10T06:09:41.538Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.538Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edfe3\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"role-list-delete-btn\",\n            \"resourceAlias\": \"Delete role button\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddff\",\n            \"createdAt\": \"2022-04-10T06:09:41.540Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.540Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edfe7\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"permission-list-delete-btn\",\n            \"resourceAlias\": \"Delete permission button\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38ede01\",\n            \"createdAt\": \"2022-04-10T06:09:41.542Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.542Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf37\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/products/detail\",\n            \"resourceAlias\": \"Products detail API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddd3\",\n            \"createdAt\": \"2022-04-10T06:09:41.444Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.444Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf39\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/products/create\",\n            \"resourceAlias\": \"Products create API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddd5\",\n            \"createdAt\": \"2022-04-10T06:09:41.445Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.445Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf3b\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/products/update\",\n            \"resourceAlias\": \"Products update API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddd7\",\n            \"createdAt\": \"2022-04-10T06:09:41.446Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.446Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf3d\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/products/search\",\n            \"resourceAlias\": \"Products search API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddd9\",\n            \"createdAt\": \"2022-04-10T06:09:41.447Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.447Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf3f\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/products/count\",\n            \"resourceAlias\": \"Products count API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38edddb\",\n            \"createdAt\": \"2022-04-10T06:09:41.448Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.448Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf41\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/products/delete\",\n            \"resourceAlias\": \"Products delete API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38edddd\",\n            \"createdAt\": \"2022-04-10T06:09:41.448Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.448Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf43\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/roles/detail\",\n            \"resourceAlias\": \"Roles detail API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38edda7\",\n            \"createdAt\": \"2022-04-10T06:09:41.450Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.450Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf45\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/roles/create\",\n            \"resourceAlias\": \"Roles create API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38edda9\",\n            \"createdAt\": \"2022-04-10T06:09:41.451Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.451Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"625274a5834c475ab38edf47\",\n            \"createdBy\": \"303030303030303030303030\",\n            \"updatedBy\": \"303030303030303030303030\",\n            \"resourceName\": \"/api/roles/update\",\n            \"resourceAlias\": \"Roles update API\",\n            \"roleName\": \"superadmin\",\n            \"roleAlias\": \"Superadmin\",\n            \"isAllowed\": true,\n            \"isDisabled\": false,\n            \"roleId\": \"625274a5834c475ab38ede0c\",\n            \"resourceId\": \"625274a4834c475ab38eddab\",\n            \"createdAt\": \"2022-04-10T06:09:41.453Z\",\n            \"updatedAt\": \"2022-04-10T06:09:41.453Z\",\n            \"__v\": 0\n        }\n    ],\n    \"sessionId\": \"a67c1b9d-ec60-41df-b875-a2e0a1a9ce06\",\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNTI3NGE1ODM0YzQ3NWFiMzhlZGUxZiIsInVzZXJuYW1lIjoic3VwZXJhZG1pbkBzYWJpbC5jb20iLCJyb2xlSWQiOiI2MjUyNzRhNTgzNGM0NzVhYjM4ZWRlMGMiLCJleHAiOm51bGwsImlhdCI6MTY0OTU3MTEwNn0.GfCIl984cFIuhpJ82XkZUojP2hAmc9Ul4TgF5QLFlVI\",\n    \"userInfo\": {\n        \"name\": \"Serati Ma\",\n        \"avatar\": \"https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png\",\n        \"userid\": \"00000001\",\n        \"email\": \"antdesign@alipay.com\",\n        \"signature\": \"海纳百川，有容乃大\",\n        \"title\": \"交互专家\",\n        \"group\": \"蚂蚁金服－某某某事业群－某某平台部－某某技术部－UED\",\n        \"tags\": [\n            {\n                \"key\": \"0\",\n                \"label\": \"很有想法的\"\n            },\n            {\n                \"key\": \"1\",\n                \"label\": \"专注设计\"\n            },\n            {\n                \"key\": \"2\",\n                \"label\": \"辣~\"\n            },\n            {\n                \"key\": \"3\",\n                \"label\": \"大长腿\"\n            },\n            {\n                \"key\": \"4\",\n                \"label\": \"川妹子\"\n            },\n            {\n                \"key\": \"5\",\n                \"label\": \"海纳百川\"\n            }\n        ],\n        \"notifyCount\": 12,\n        \"unreadCount\": 11,\n        \"country\": \"China\",\n        \"access\": \"admin\",\n        \"geographic\": {\n            \"province\": {\n                \"label\": \"浙江省\",\n                \"key\": \"330000\"\n            },\n            \"city\": {\n                \"label\": \"杭州市\",\n                \"key\": \"330100\"\n            }\n        },\n        \"address\": \"西湖区工专路 77 号\",\n        \"phone\": \"0752-268888888\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"displayName\": \"Jaydon Frankie\",\n        \"email\": \"demo@minimals.cc\",\n        \"password\": \"demo1234\",\n        \"photoURL\": \"https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_default.jpg\",\n        \"phoneNumber\": \"+40 777666555\",\n        \"country\": \"United States\",\n        \"address\": \"90210 Broadway Blvd\",\n        \"state\": \"California\",\n        \"city\": \"San Francisco\",\n        \"zipCode\": \"94116\",\n        \"about\": \"Praesent turpis. Phasellus viverra nulla ut metus varius laoreet. Phasellus tempus.\",\n        \"role\": \"admin\",\n        \"isPublic\": true\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/users",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/search",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"current\": 1, \"pageSize\":2, \"sort\": \"firstName\", \"order\":1}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/users/search",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user/62502ca11e547036b77f1f1f",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								"62502ca11e547036b77f1f1f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"displayName\": \"Jaydon Frankie\",\n        \"email\": \"demo@minimals.cc\",\n        \"password\": \"demo1234\",\n        \"photoURL\": \"https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_default.jpg\",\n        \"phoneNumber\": \"+40 777666555\",\n        \"country\": \"United States\",\n        \"address\": \"90210 Broadway Blvd\",\n        \"state\": \"California\",\n        \"city\": \"San Francisco\",\n        \"zipCode\": \"94116\",\n        \"about\": \"Praesent turpis. Phasellus viverra nulla ut metus varius laoreet. Phasellus tempus.\",\n        \"role\": \"admin\",\n        \"isPublic\": true\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"displayName\": \"Jaydon Frankie\",\n        \"email\": \"demo@minimals.cc\",\n        \"password\": \"demo1234\",\n        \"photoURL\": \"https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_default.jpg\",\n        \"phoneNumber\": \"+40 777666555\",\n        \"country\": \"United States\",\n        \"address\": \"90210 Broadway Blvd\",\n        \"state\": \"California\",\n        \"city\": \"San Francisco\",\n        \"zipCode\": \"94116\",\n        \"about\": \"Praesent turpis. Phasellus viverra nulla ut metus varius laoreet. Phasellus tempus.\",\n        \"role\": \"admin\",\n        \"isPublic\": true\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/user",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sales-orders",
+			"item": [
+				{
+					"name": "/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"total\": 23,\n    \"discount\": 44,\n    \"subtotal\": 33,\n    \"shipping\": 344,\n    \"sales_order_number\": \"SO-dsfsdfsd43543534\",\n    \"sales_order_date\": \"2022-06-20T16:42:41.369+00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/sales-orders/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sales-orders",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/search",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"current\": 1,\n    \"pageSize\": 20\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/sales-orders/search",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sales-orders",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/sales-orders/detail?id=62b15ac517200b6b2f41f8b3",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sales-orders",
+								"detail"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "62b15ac517200b6b2f41f8b3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"62b15ac517200b6b2f41f8b3\",\n    \"total\": 23000,\n    \"discount\": 44,\n    \"subtotal\": 33,\n    \"shipping\": 344,\n    \"sales_order_number\": \"SO-dsfsdfsd43543534\",\n    \"sales_order_date\": \"2022-06-20T16:42:41.369+00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/sales-orders/update",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sales-orders",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/sales-orders/delete?id=62b15ad417200b6b2f41f8b7",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sales-orders",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "62b15ad417200b6b2f41f8b7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Awesome Concrete Cheese\",\n    \"code\": \"0xff65f58E60ddd0000\",\n    \"images\": [\n        \"http://loremflickr.com/640/480/food?21143\",\n        \"http://loremflickr.com/640/480/food?62101\",\n        \"http://loremflickr.com/640/480/food?20773\"\n    ],\n    \"tags\": [\n        \"Generic\",\n        \"Fresh\"\n    ],\n    \"sizes\": [\n        \"10\",\n        \"11\",\n        \"12\",\n        \"13\",\n        \"14\",\n        \"15\",\n        \"16\",\n        \"17\",\n        \"18\",\n        \"19\"\n    ],\n    \"colors\": [\n        \"#5f6b1a\",\n        \"#2f6e60\",\n        \"#732f47\"\n    ],\n    \"createdBy\": \"303030303030303030303030\",\n    \"updatedBy\": \"303030303030303030303030\",\n    \"cover\": \"http://loremflickr.com/640/480/food?45536\",\n    \"sku\": \"Gorgeous-Concrete-Table\",\n    \"price\": 593,\n    \"priceSale\": 858,\n    \"totalRating\": 3484,\n    \"totalReview\": 734,\n    \"ratings\": [\n        {\n            \"name\": \"1 Star\",\n            \"starCount\": 471,\n            \"reviewCount\": 49\n        },\n        {\n            \"name\": \"2 Star\",\n            \"starCount\": 1715,\n            \"reviewCount\": 1439\n        },\n        {\n            \"name\": \"3 Star\",\n            \"starCount\": 439,\n            \"reviewCount\": 443\n        },\n        {\n            \"name\": \"4 Star\",\n            \"starCount\": 1107,\n            \"reviewCount\": 1164\n        },\n        {\n            \"name\": \"5 Star\",\n            \"starCount\": 1808,\n            \"reviewCount\": 1880\n        }\n    ],\n    \"reviews\": [\n        {\n            \"id\": \"0xfB6c15573c\",\n            \"name\": \"Ms. Arlene Orn\",\n            \"avatarUrl\": \"https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1010.jpg\",\n            \"rating\": 8,\n            \"isPurchased\": true,\n            \"helpful\": 663,\n            \"postedAt\": \"2011-01-10T01:01:22.927Z\"\n        }\n    ],\n    \"isVariant\": false,\n    \"status\": \"sale\",\n    \"inventoryType\": \"out_of_stock\",\n    \"available\": 1837,\n    \"description\": \"New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart\",\n    \"sold\": 17646,\n    \"createdAt\": \"Mon Aug 09 2021 05:26:04 GMT+0600 (Bangladesh Standard Time)\",\n    \"category\": \"Shose\",\n    \"gender\": \"Kids\",\n    \"cost\": 209,\n    \"manufacturingDate\": \"2022-03-20T03:14:51.747Z\",\n    \"expiryDate\": \"2022-10-29T02:19:19.977Z\",\n    \"size\": 7,\n    \"updatedAt\": \"2021-08-08T23:26:04Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/products/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/search",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"current\": 1,\n    \"pageSize\": 20\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/products/search",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/products/detail?id=62b0b4de8960cd4a2bc4a7d6",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products",
+								"detail"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "62b0b4de8960cd4a2bc4a7d6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\":\"62b0b4de8960cd4a2bc4a7d6\",\n    \"name\": \"Awesome Concrete Cheese uuuu\",\n    \"code\": \"0xff65f58E60ddd000s0\",\n    \"images\": [\n        \"http://loremflickr.com/640/480/food?21143\",\n        \"http://loremflickr.com/640/480/food?62101\",\n        \"http://loremflickr.com/640/480/food?20773\"\n    ],\n    \"tags\": [\n        \"Generic\",\n        \"Fresh\"\n    ],\n    \"sizes\": [\n        \"10\",\n        \"11\",\n        \"12\",\n        \"13\",\n        \"14\",\n        \"15\",\n        \"16\",\n        \"17\",\n        \"18\",\n        \"19\"\n    ],\n    \"colors\": [\n        \"#5f6b1a\",\n        \"#2f6e60\",\n        \"#732f47\"\n    ],\n    \"createdBy\": \"303030303030303030303030\",\n    \"updatedBy\": \"303030303030303030303030\",\n    \"cover\": \"http://loremflickr.com/640/480/food?45536\",\n    \"sku\": \"Gorgeous-Concrete-Table\",\n    \"price\": 593,\n    \"priceSale\": 858,\n    \"totalRating\": 3484,\n    \"totalReview\": 734,\n    \"ratings\": [\n        {\n            \"name\": \"1 Star\",\n            \"starCount\": 471,\n            \"reviewCount\": 49\n        },\n        {\n            \"name\": \"2 Star\",\n            \"starCount\": 1715,\n            \"reviewCount\": 1439\n        },\n        {\n            \"name\": \"3 Star\",\n            \"starCount\": 439,\n            \"reviewCount\": 443\n        },\n        {\n            \"name\": \"4 Star\",\n            \"starCount\": 1107,\n            \"reviewCount\": 1164\n        },\n        {\n            \"name\": \"5 Star\",\n            \"starCount\": 1808,\n            \"reviewCount\": 1880\n        }\n    ],\n    \"reviews\": [\n        {\n            \"id\": \"0xfB6c15573c\",\n            \"name\": \"Ms. Arlene Orn\",\n            \"avatarUrl\": \"https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1010.jpg\",\n            \"rating\": 8,\n            \"isPurchased\": true,\n            \"helpful\": 663,\n            \"postedAt\": \"2011-01-10T01:01:22.927Z\"\n        }\n    ],\n    \"isVariant\": false,\n    \"status\": \"sale\",\n    \"inventoryType\": \"out_of_stock\",\n    \"available\": 1837,\n    \"description\": \"New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart\",\n    \"sold\": 17646,\n    \"createdAt\": \"Mon Aug 09 2021 05:26:04 GMT+0600 (Bangladesh Standard Time)\",\n    \"category\": \"Shose\",\n    \"gender\": \"Kids\",\n    \"cost\": 209,\n    \"manufacturingDate\": \"2022-03-20T03:14:51.747Z\",\n    \"expiryDate\": \"2022-10-29T02:19:19.977Z\",\n    \"size\": 7,\n    \"updatedAt\": \"2021-08-08T23:26:04Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/products/update",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/products/delete?id=62b0b4de8960cd4a2bc4a823",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "62b0b4de8960cd4a2bc4a823"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080/api"
+		},
+		{
+			"key": "accessToken",
+			"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTI0YTBlODdlNTM2YzBkYjU1MzVkOCIsInVzZXJuYW1lIjoic3VwZXJhZG1pbkBibG9nLmNvbSIsInJvbGVJZCI6IjYyOTI0YTBlODdlNTM2YzBkYjU1MzViZSIsImV4cCI6MTY1Mzg0MzQ5NywiaWF0IjoxNjUzODQzMzk3fQ.dHvHBoRVNGHuKE6TeY0X6OePFpAftp1Jw-Esu556Hq0"
+		}
+	]
+}
