@@ -48,7 +48,7 @@ export default function CheckoutOrderComplete({ ...other }) {
 
           <Typography align="left" paragraph>
             Thanks for placing order &nbsp;
-            <Link href="#">01dc1370-3df6-11eb-b378-0242ac130002</Link>
+            <Link href="#">{`SO-${Math.floor(Math.random() * 1000000)}`}</Link>
           </Typography>
 
           <Typography align="left" sx={{ color: 'text.secondary' }}>
