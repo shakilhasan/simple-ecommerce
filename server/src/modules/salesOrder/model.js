@@ -19,7 +19,7 @@ const schema = new mongoose.Schema(
         percentPromotionList: { type: Array, required: false, default: null },
         totalPromotion: { type: Number, required: false, default: null },
         warehouse: {type: mongoose.Schema.Types.ObjectId, ref: 'warehouse'},
-        sales_person: {type: String, required : true},
+        sales_person: {type: String, required : false},
         productList: [productSchema],
         discount_value: {type: Number, required: false},
         shipping : {type: Number, required: false},
