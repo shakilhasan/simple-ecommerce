@@ -1,0 +1,52 @@
+[
+    {
+        "firstName": "Super",
+        "lastName": "Admin",
+        "displayName": "Super Admin",
+        "username": "superadmin@ecommerce.com",
+        "address": "Dhaka, Bangladesh",
+        "phoneNumber": "01000000001",
+        "email": "superadmin@ecommerce.com",
+        "roleId": "",
+        "roleAlias": "Super Admin",
+        "password": "ecommerce1234",
+        "isVerified": true,
+        "status": "active",
+        "company": "ecommerce",
+        "photoURL": "https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_2.jpg"
+    },
+    {
+        "firstName": "Admin",
+        "lastName": "Admin",
+        "username": "admin@ecommerce.com",
+        "displayName": "admin",
+        "address": "Wakanda",
+        "phoneNumber": "01000000002",
+        "email": "admin@ecommerce.com",
+        "roleId": "",
+        "roleAlias": "Admin",
+        "password": "ecommerce1234",
+        "isVerified": true,
+        "status": "active",
+        "company": "ecommerce",
+        "photoURL": "https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_2.jpg"
+
+    },
+    {
+        "firstName": "User",
+        "lastName": "User",
+        "username": "user@ecommerce.com",
+        "displayName": "user",
+        "address": "Wakanda",
+        "phoneNumber": "01000000003",
+        "email": "user@ecommerce.com",
+        "roleId": "",
+        "roleAlias": "User",
+        "password": "ecommerce1234",
+        "isVerified": true,
+        "status": "active",
+        "company": "ecommerce",
+        "photoURL": "https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_2.jpg"
+
+    }
+]

@@ -1,0 +1,24 @@
+{
+  "name": "Ecommerce",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
+  "description": "A functional ecommerce web application that is developed by using React, Redux, Node.js, Express, MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "sudo docker-compose up",
+    "build": "docker-compose build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shakilhasan/simple-ecommerce.git"
+  },
+  "keywords": [],
+  "author": "Md.Shakil Hasan Ibn Younus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shakilhasan/simple-ecommerce/issues"
+  },
+  "homepage": "https://github.com/shakilhasan/simple-ecommerce#readme"
+}
