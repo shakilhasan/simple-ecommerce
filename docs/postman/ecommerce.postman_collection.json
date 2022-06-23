@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "3e303642-db16-4194-8f5e-0f41c88034ae",
+		"_postman_id": "82a6cb71-f2f8-45e2-865c-c248c4fb4657",
 		"name": "ecommerce",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -171,15 +171,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"email\":\"demo@minimals.cc\",\"password\":\"demo1234\"}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
 									"raw": "https://minimal-assets-api.vercel.app/api/account/login",
 									"protocol": "https",
@@ -307,15 +298,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
 									"raw": "https://minimal-assets-api.vercel.app/api/account/my-account",
 									"protocol": "https",
@@ -426,15 +408,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"email\":\"demo@minimals.cc\",\"password\":\"demo1234\"}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
 									"raw": "https://minimal-assets-api.vercel.app/api/account/login",
 									"protocol": "https",
@@ -551,15 +524,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"email\":\"demo@minimals.cc\",\"password\":\"demo1234\"}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
 									"raw": "https://minimal-assets-api.vercel.app/api/account/login",
 									"protocol": "https",
@@ -681,15 +645,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"email\":\"demo@minimals.cc\",\"password\":\"demo1234\"}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
 									"raw": "https://minimal-assets-api.vercel.app/api/account/login",
 									"protocol": "https",
@@ -806,15 +761,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"email\":\"demo@minimals.cc\",\"password\":\"demo1234\"}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
 									"raw": "https://minimal-assets-api.vercel.app/api/account/login",
 									"protocol": "https",
@@ -1285,7 +1231,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"total\": 23,\n    \"discount\": 44,\n    \"subtotal\": 33,\n    \"shipping\": 344,\n    \"sales_order_number\": \"SO-dsfsdfsd43543534\",\n    \"sales_order_date\": \"2022-06-20T16:42:41.369+00:00\"\n}",
+							"raw": "{\n    \"invoice\": null,\n    \"customer_address\": {\n        \"id\": \"e99f09a7-dd88-49d5-b1c8-1daf80c2d7b2\",\n        \"receiver\": \"Lucian Obrien\",\n        \"fullAddress\": \"1147 Rohan Drive Suite 819 - Burlington, VT / 82021\",\n        \"phone\": \"904-966-2836\",\n        \"addressType\": \"Office\",\n        \"isDefault\": false\n    },\n    \"bdtPromotionList\": [],\n    \"percentPromotionList\": [],\n    \"totalPromotion\": null,\n    \"products\": [\n        {\n            \"name\": \"Awesome Concrete Cheese uuuu\",\n            \"cover\": \"http://loremflickr.com/640/480/food?45536\",\n            \"available\": 1837,\n            \"price\": 593,\n            \"color\": \"#5f6b1a\",\n            \"size\": \"14\",\n            \"quantity\": 3,\n            \"subtotal\": 1186\n        }\n    ],\n    \"total_quantity\": 0,\n    \"total_packaged\": 0,\n    \"total_invoiced\": 0,\n    \"total\": 1779,\n    \"discount\": 0,\n    \"subtotal\": 1779,\n    \"shipping\": 0,\n    \"sales_order_number\": \"SO-596131\",\n    \"sales_order_date\": \"2022-06-20T16:42:41.369+00:00\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1362,7 +1308,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/sales-orders/detail?id=62b15ac517200b6b2f41f8b3",
+							"raw": "{{baseUrl}}/sales-orders/detail?id=62b34fd5ddf48a5b5d3923eb",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -1373,7 +1319,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "62b15ac517200b6b2f41f8b3"
+									"value": "62b34fd5ddf48a5b5d3923eb"
 								}
 							]
 						}
@@ -1470,7 +1416,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Awesome Concrete Cheese\",\n    \"code\": \"0xff65f58E60ddd0000\",\n    \"images\": [\n        \"http://loremflickr.com/640/480/food?21143\",\n        \"http://loremflickr.com/640/480/food?62101\",\n        \"http://loremflickr.com/640/480/food?20773\"\n    ],\n    \"tags\": [\n        \"Generic\",\n        \"Fresh\"\n    ],\n    \"sizes\": [\n        \"10\",\n        \"11\",\n        \"12\",\n        \"13\",\n        \"14\",\n        \"15\",\n        \"16\",\n        \"17\",\n        \"18\",\n        \"19\"\n    ],\n    \"colors\": [\n        \"#5f6b1a\",\n        \"#2f6e60\",\n        \"#732f47\"\n    ],\n    \"createdBy\": \"303030303030303030303030\",\n    \"updatedBy\": \"303030303030303030303030\",\n    \"cover\": \"http://loremflickr.com/640/480/food?45536\",\n    \"sku\": \"Gorgeous-Concrete-Table\",\n    \"price\": 593,\n    \"priceSale\": 858,\n    \"totalRating\": 3484,\n    \"totalReview\": 734,\n    \"ratings\": [\n        {\n            \"name\": \"1 Star\",\n            \"starCount\": 471,\n            \"reviewCount\": 49\n        },\n        {\n            \"name\": \"2 Star\",\n            \"starCount\": 1715,\n            \"reviewCount\": 1439\n        },\n        {\n            \"name\": \"3 Star\",\n            \"starCount\": 439,\n            \"reviewCount\": 443\n        },\n        {\n            \"name\": \"4 Star\",\n            \"starCount\": 1107,\n            \"reviewCount\": 1164\n        },\n        {\n            \"name\": \"5 Star\",\n            \"starCount\": 1808,\n            \"reviewCount\": 1880\n        }\n    ],\n    \"reviews\": [\n        {\n            \"id\": \"0xfB6c15573c\",\n            \"name\": \"Ms. Arlene Orn\",\n            \"avatarUrl\": \"https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1010.jpg\",\n            \"rating\": 8,\n            \"isPurchased\": true,\n            \"helpful\": 663,\n            \"postedAt\": \"2011-01-10T01:01:22.927Z\"\n        }\n    ],\n    \"isVariant\": false,\n    \"status\": \"sale\",\n    \"inventoryType\": \"out_of_stock\",\n    \"available\": 1837,\n    \"description\": \"New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart\",\n    \"sold\": 17646,\n    \"createdAt\": \"Mon Aug 09 2021 05:26:04 GMT+0600 (Bangladesh Standard Time)\",\n    \"category\": \"Shose\",\n    \"gender\": \"Kids\",\n    \"cost\": 209,\n    \"manufacturingDate\": \"2022-03-20T03:14:51.747Z\",\n    \"expiryDate\": \"2022-10-29T02:19:19.977Z\",\n    \"size\": 7,\n    \"updatedAt\": \"2021-08-08T23:26:04Z\"\n}",
+							"raw": "{\n    \"name\": \"Hasan-product-133\",\n    \"code\": \"0xff65f58fffE60ssddd0044001\",\n    \"images\": [\n        \"http://loremflickr.com/640/480/food?21143\",\n        \"http://loremflickr.com/640/480/food?62101\",\n        \"http://loremflickr.com/640/480/food?20773\"\n    ],\n    \"tags\": [\n        \"Generic\",\n        \"Fresh\"\n    ],\n    \"sizes\": [\n        \"XL\",\n        \"SM\",\n        \"X\",\n        \"XXL\",\n        \"14\",\n        \"15\",\n        \"16\",\n        \"17\",\n        \"18\",\n        \"19\"\n    ],\n    \"colors\": [\n        \"#5f6b1a\",\n        \"#2f6e60\",\n        \"#732f47\",\n         \"#832f47\"\n\n    ],\n    \"createdBy\": \"303030303030303030303030\",\n    \"updatedBy\": \"303030303030303030303030\",\n    \"cover\": \"http://loremflickr.com/640/480/food?45536\",\n    \"sku\": \"Gorgeous-Concrete-Table\",\n    \"price\": 593,\n    \"priceSale\": 858,\n    \"totalRating\": 3484,\n    \"totalReview\": 734,\n    \"ratings\": [\n        {\n            \"name\": \"1 Star\",\n            \"starCount\": 471,\n            \"reviewCount\": 49\n        },\n        {\n            \"name\": \"2 Star\",\n            \"starCount\": 1715,\n            \"reviewCount\": 1439\n        },\n        {\n            \"name\": \"3 Star\",\n            \"starCount\": 439,\n            \"reviewCount\": 443\n        },\n        {\n            \"name\": \"4 Star\",\n            \"starCount\": 1107,\n            \"reviewCount\": 1164\n        },\n        {\n            \"name\": \"5 Star\",\n            \"starCount\": 1808,\n            \"reviewCount\": 1880\n        }\n    ],\n    \"reviews\": [\n        {\n            \"id\": \"0xfB6c15573c\",\n            \"name\": \"Ms. Arlene Orn\",\n            \"avatarUrl\": \"https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1010.jpg\",\n            \"rating\": 8,\n            \"isPurchased\": true,\n            \"helpful\": 663,\n            \"postedAt\": \"2011-01-10T01:01:22.927Z\"\n        }\n    ],\n    \"isVariant\": false,\n    \"status\": \"sale\",\n    \"inventoryType\": \"out_of_stock\",\n    \"available\": 1837,\n    \"description\": \"New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart\",\n    \"sold\": 17646,\n    \"createdAt\": \"Mon Aug 09 2021 05:26:04 GMT+0600 (Bangladesh Standard Time)\",\n    \"category\": \"Shose\",\n    \"gender\": \"Kids\",\n    \"cost\": 209,\n    \"manufacturingDate\": \"2022-03-20T03:14:51.747Z\",\n    \"expiryDate\": \"2022-10-29T02:19:19.977Z\",\n    \"size\": 7,\n    \"updatedAt\": \"2021-08-08T23:26:04Z\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1547,7 +1493,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/products/detail?id=62b0b4de8960cd4a2bc4a7d6",
+							"raw": "{{baseUrl}}/products/detail?id=62b3524eddf48a5b5d3923fb",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -1558,7 +1504,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "62b0b4de8960cd4a2bc4a7d6"
+									"value": "62b3524eddf48a5b5d3923fb"
 								}
 							]
 						}
@@ -1638,7 +1584,7 @@
 					"response": []
 				}
 			]
-		},
+		}
 	],
 	"event": [
 		{
